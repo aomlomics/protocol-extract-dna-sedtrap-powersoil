@@ -35,88 +35,123 @@ pool_dna_num: not applicable
 nucl_acid_ext_method_additional: not applicable
 ---
 
-# AOML Protocol for Extracting Sediment Trap Samples from Formalin Solution
+# NOAA/AOML Protocol for Extracting Sediment Trap Samples from Formalin Solution
 
-PROTOCOL INFORMATION
+## PROTOCOL INFORMATION
 
-## Minimum Information about an Omics Protocol (MIOP)
+### Minimum Information about an Omics Protocol (MIOP)
 
-See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
+- MIOP terms are listed in the YAML frontmatter of this page.
+- See <https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml> for list and definitions.
 
+### Making eDNA FAIR (FAIRe)
 
-## AUTHORS
+- FAIRe terms are listed in the YAML frontmatter of this page.
+- See <https://fair-edna.github.io/download.html> for the FAIRe checklist and more information.
+- See <https://fair-edna.github.io/guidelines.html#missing-values> for guidelines on missing values that can be used for missing FAIRe or MIOP terms.
 
-| PREPARED BY | AFFILIATION | ORCID (visit https://orcid.org/ to register) | DATE |
+### Authors
+
+- All authors known to have contributed to the preparation of this protocol, including those who filled in the template.
+- Visit https://orcid.org/ to register for an ORCID.
+- Date is the date the author first worked on the protocol.
+
+| PREPARED BY | AFFILIATION | ORCID | DATE |
 | ------------- | ------------- | ------------- | ------------- |
 | Shiozaki et al. | NA  | NA | 2021 |
 | Santoro lab | UC Santa Barbara  | NA | NA |
-| Emily Osborne | NOAA AOML | 0000-0001-9579-5851 | 2024-01
-| Gabriella Lirio | NOAA AOML, CIMAS | NA | 2025-01-29
+| Emily Osborne | NOAA AOML | 0000-0001-9579-5851 | 2024-01-29 |
+| Gabriella Lirio | NOAA AOML, CIMAS | NA | 2025-01-29 |
+| Sammy Harding | NOAA AOML, MSU/NGI | 0009-0008-8885-6140 | 2025-06-24 |
 
-## PROTOCOL REVISION RECORD
+### Related Protocols
 
-Version numbers start at "1.0.0" when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0). Please store all versions in the gDrive folder designated to your institute.
+- This section contains protocols that should be known to users of this protocol.
+- Internal Protocols: Derivative or altered protocols, or other protocols in this workflow.
+- External Protocols: Protcols from manufacturers or other groups. 
+- Include the link to each protocol.
+- Include the version number (internal) or access date (external) of the protocol when it was accessed.
+- 
+#### Internal Protocols
 
-| VERSION  | RELEASE DATE | DESCRIPTION OF REVISIONS | 
+| PROTOCOL NAME | LINK | VERSION | RELEASE DATE |
+| ------------- | ------------ | ------------ | ---------- |
+| NOAA/AOML PCR Protocol 16S rRNA V4-V5 (EMP) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu16sv4v5_emp.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML PCR Protocol 18S rRNA V9 (EMP) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu18sv9_emp.md> | 1.1.0 | 2024-11-16 |
+
+#### External Protocols
+
+| PROTOCOL NAME | LINK | ISSUER / AUTHOR | ACCESS DATE |
+| ------------ | ------------ | ------------ | ---------- |
+| DNeasy PowerSoil Pro Kit Handbook | <https://www.qiagen.com/us/resources/resourcedetail?id=9bb59b74-e493-4aeb-b6c1-f660852e8d97&lang=en> | QIAGEN | 2025-06-24 |
+
+### Protocol Revision Record
+
+- Version numbers start at 1.0.0 when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
+- Release date is the date when a given protocol version was finalised.
+- Description of revisions includes a brief description of what was changed relative to the previous version.
+
+| VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
 | 1.0.0  | 2025-01-29  | Initial release  |
+| 1.1.0 | 2025-06-24 | Minor formatting changes, changed name of NEBNext FFPE DNA Repair to NEBNext FFPE DNA Repair v2 Module |
 
-## ACRONYMS AND ABBREVIATIONS
+### Acronyms and Abbreviations
 
 | ACRONYM / ABBREVIATION | DEFINITION |
 | ------------- | ------------- |
 | NOAA | National Oceanic and Atmospheric Administration |
 | AOML | Atlantic Oceanographic and Meteorological Laboratory |
 | CIMAS | Cooperative Institute for Marine and Atmospheric Studies |
+| NGI | Northern Gulf Institute |
 | eDNA | environmental DNA |
 | PPE | Personal protective equipment |
 | PCR | Polymerase chain reaction |
 | EtOH | Ethanol |
 | NTC | No template control |
 
-
-## GLOSSARY
+### Glossary
 
 | SPECIALISED TERM | DEFINITION |
 | ------------- | ------------- |
 | Extraction blank | A type of negative control to confirm there is no contamination during DNA extractions. Normally an empty filter extracted and PCR amplified alongside other samples. |
 | No template control | A type of negative control during PCR to confirm there is no contamination during the PCR process. Normally nuclease-free water run in place of DNA on a PCR. |
 
-# BACKGROUND
+## BACKGROUND
 
-## Summary
+### Summary
 
 This protocol is used for {{analyses}} of {{environmental_medium}} eDNA samples from sediment-trap collected samples using contents of a {{nucl_acid_ext_kit}}. This protocol is used by the Ocean Biogeochemistry and Molecular and Computational Biodiverstiy groups of {{publisher}}. 
 
-## Method description and rationale
+### Method description and rationale
 
 This protocol was adapted from Shiozaki et al. (2021) and colleagues from the Santoro lab (UC Santa Barbara) to optimize eDNA extraction from sediment samples.
 
-## Spatial coverage and environment(s) of relevance
+### Spatial coverage and environment(s) of relevance
 
 This protocol has been used to extract DNA from thousands of {{environmental_medium}} eDNA samples taken from the Northern Gulf of Mexico. Sample depths of 550m in the marine aphotic zone (ENVO:00000210).
 
-# PERSONNEL REQUIRED
+## PERSONNEL REQUIRED
 
 One person with molecular biology experience.
 
-## Safety
+### Safety
 
 Borate-NaOH is classified as category 5 acute oral toxicity and should not be swallowed. SDS solution has category 2 acute aquatic toxicity and category 3 chronic aquatic toxicity. It may cause serious eye damage, harmful if swallowed or inhaled, and may cause skin irritation. Proteinase K is classified as category 2 for skin corrosion/irritation and serious eye damage/eye irritation, category 1 for respiratory sensitization, and cateogry 3 for specific target organ toxicity (single exposure). A mixture within the AMpure XP beads is classified as category 2 acute toxicity. Ethanol is categorized as a category 2 flammable liquid and for serious eye damage/eye irritation. For all reagents, standard precautions for handling chemicals including wearing PPE is recommended to avoid skin and eye exposure.
 
-## Training requirements
+### Training requirements
 
 Basic molecular biology training (including sterile technique, pipetting) is required to conduct this protocol.
 
-## Time needed to execute the procedure
+### Time needed to execute the procedure
 
 Extracting DNA from 21-cup sediment trap samples (64 triplicates + 3 blanks) is suggested to be completed over 2-3 days.
 
-# EQUIPMENT
+## EQUIPMENT
 
 | DESCRIPTION | PRODUCT NAME AND MODEL | MANUFACTURER | QUANTITY | REMARK |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Durable equipment |
+| **Durable equipment** |
 | Vortex | Vortex Genie | Scientific Industries | as many as possible | # of vortexed will affect run time of protocol |
 | Water bath | Content Cell | Content Cell | Content Cell | Content Cell |
 | Microcentrifuge| Centrifuge 5425 R - Microcentrifuge | Eppendorf | 1 | Can be substituted with generic |
@@ -127,7 +162,7 @@ Extracting DNA from 21-cup sediment trap samples (64 triplicates + 3 blanks) is 
 | Tube Racks | 2 mL tube 96-well tube racks | Generic | 1 | Can be any brand, must fit 2 mL tubes |
 | Wash bottles | Safety wash bottles 500 mL for EtOH | Generic |  |  |
 | Metal spatula | Eisco Stainless Steel Laboratory Spatula with Scoop | Eisco | 1 | Can be substitued with generic |
-| Consumable equipment |
+| **Consumable equipment** |
 | 50 mL falcon tubes| Nunc 50 mL Bioreactor Tube | Thermo Scientific | 21 | Can be substituted with generic |
 | 1000 uL tips | OT-2 Filter Tips, 1000 uL | Opentrons | 6 boxes | Can be substituted with generic |
 | 200 uL tips | OT-2 Filter Tips, 200µL | opentrons | 7 boxes | Can be substituted with generic |
@@ -137,7 +172,7 @@ Extracting DNA from 21-cup sediment trap samples (64 triplicates + 3 blanks) is 
 | 96-well PCR plate| Armadillo PCR Plate, 96-well, clear, clear wells | ThermoFisher | 1 | |
 | Parafilm | Parafilm M Lab Film | Generic | 1 roll | Can be substituted with generic |
 | Gloves | Nitrile Gloves, Exam Grade, Powder-free | ULINE | 1 box | Can be substituted with generic |
-| Chemicals |
+| **Chemicals** |
 | NaOH pellets |  | Generic | 10 g | Used to create Borate-NaOH buffer |
 | Borate powder |  | Generic | 0.7725 g | Used to create Borate-NaOH buffer |
 | SDS (10%) |  | Generic | 5 mL | Used to create working solution |
@@ -145,8 +180,9 @@ Extracting DNA from 21-cup sediment trap samples (64 triplicates + 3 blanks) is 
 | AMPure XP Beads | AMPure XP Bead-Based Reagent | Beckman Coulter | 12.28 mL |  |
 | 80% EtOH | Molecular bio grade ethanol | Generic | 13.2 mL | Used in protocol |
 | 70% EtOH | Molecular bio grade ethanol | Generic | 1 Wash Bottle | Used for cleaning lab surfaces |
+| RNase Away | Research Products International Corp RNase Away, 475ml Spray Bottle | Thermo Fisher | 1 bottle |  |
 | 0.1X TE | TE, pH 8.0, RNase-free | Invitrogen | 2.64 mL |  |
-| Qiagen DNeasy PowerSoil Pro Kit |
+| **Qiagen DNeasy PowerSoil Pro Kit** |
 | Microcentrifuge tubes | Microcentrifuge tubes ( 2 mL) | Qiagen |  | Can be substituted with generic |
 | Elution tubes | Elution tubes (1.5 mL) | Qiagen | 132 | Can be substituted with generic |
 | MB Spin Column | MB Spin Columns | Qiagen | 66 | Can be substituted with generic |
@@ -156,23 +192,21 @@ Extracting DNA from 21-cup sediment trap samples (64 triplicates + 3 blanks) is 
 | Solution EA |  | Qiagen | 33.0 mL |  |
 | Solution C5 |  | Qiagen | 33.0 mL |  |
 | Solution C6 |  | Qiagen | 6.6 mL |  |
-| NEBNext FFPE DNA Repair |
-| FFPE DNA Repair Buffer | NEBNext FFPE DNA Repair Buffer | New England Biolabs | 429 uL |  |
-| FFPE DNA Repair Mix | NEBNext FFPE DNA Repair Mix | New England Biolabs | 132 uL |  |
+| **NEBNext FFPE DNA Repair v2 Module** |
+| FFPE DNA Repair Buffer v2 | NEBNext FFPE DNA Repair Buffer v2 | New England Biolabs | 429 uL |  |
+| FFPE DNA Repair Mix v2 | NEBNext FFPE DNA Repair Mix v2 | New England Biolabs | 132 uL |  |
 
+- Description: E.g., "filter".
+- Product Name and Model: Provide the official name of the product.
+- Manufacturer: Provide the name of the manufacturer of the product.
+- Quantity: Provide quantities necessary for one application of the standard operating procedure (e.g., number of filters).
+- Remark: For example, some of the consumable may need to be sterilized, some commercial solution may need to be diluted or shielded from light during the operating procedure.
 
+## STANDARD OPERATING PROCEDURE
 
+### DNA extraction Protocol
 
-
-
-# STANDARD OPERATING PROCEDURE
-
-## DNA extraction Protocol
-
-
-## DNA extraction
-
-### Preparation
+#### Preparation
 
 • Stock solution: NaOH solution = 10 g NaOH pellets + 250 mL MilliQ (MQ)(make in hood)
 
@@ -183,10 +217,9 @@ Extracting DNA from 21-cup sediment trap samples (64 triplicates + 3 blanks) is 
    - Borate-NaOH (45 mM), SDS (1%) = 9 mL 50-mM Borate-NaOH + 1 mL 10% SDS. Makes 10 mL, make more based on the desired number of samples (~1 mL per sample needed).
    - For a full sediment trap extraction with triplicates, ~70 mL of of working solution needed (65 mL Borate-NaOH + 5 mL 10% SDS)
 
+#### Extraction
 
-### Extraction
-
-Day 1: Separate sediments into sample vials (Shiozaki et al., 2021 and Santoro Protocol, unpublished) and begin Qiagen PowerSoil Kit
+**Day 1: Separate sediments into sample vials (Shiozaki et al., 2021 and Santoro Protocol, unpublished) and begin Qiagen PowerSoil Kit**
 
 1. Centrifuge 50 mL sediment trap sample falcon tubes to concentrate/pellet the sediment (maximum speed, 4000rpm for 4 minutes – may need to do this twice if the sample does not fullt pellet)
    a. Decant off the supernatant gently.
@@ -194,7 +227,7 @@ Day 1: Separate sediments into sample vials (Shiozaki et al., 2021 and Santoro P
    b. If there are larger organisms or shells present, remove them and make note in the sample log.
       i. Ideally, remove these large organisms/shells before centrifuging.
 2. Prepare Samples in 2 mL sample tubes 
-   a. Clean off all scooping tools with RNase Zap!
+   a. Clean off all scooping tools with RNase Away
    b. Tare weight of 2-mL sample tube and then scoop/load sediments from 50 mL into 2-mL sample tube (provided in Qiagen kit), aiming for ~250 mg (as little as 200 mg and as much as 300)
    c. In cases of small samples, use eyedropper with Milli-Q to disturb the sample to pour into 2 mL tubes, wait to settle, then remove supernatant with dropper.
    d. Record exact sediment weight in each discrete tube
@@ -214,7 +247,7 @@ Day 1: Separate sediments into sample vials (Shiozaki et al., 2021 and Santoro P
 
 5. Incubate samples in a water bath (65 °C) for 24 hours (for Isotemp bath, setting 7 on temperature control (below) = 65 deg)
 
-Day 2: Continue extraction using Qiagen PowerSoil Kit
+**Day 2: Continue extraction using Qiagen PowerSoil Kit**
 
 6. Remove vials from bath and check for cracks. If a vial is cracked, transfer all contents to a new vial.
 7. Centrifuge incubated samples + beads at 15,000 x g for 1 minute
@@ -225,7 +258,7 @@ Day 2: Continue extraction using Qiagen PowerSoil Kit
    c. Avoiding the pellet, transfer up to 700 uL of supernatant to a clean 2 mL microcentrifuge tube. Expect 500-600 uL.
 10. Bind DNA: Add 600 uL of Solution CD3 and vortex for 5s. Incubate for 1 min.
 11. Load 650 uL of the lysate onto an MB Spin Column and centrifuge at 15,000 x g for 1 min
-   a. Discard the flow-through and repeat previous step to ensure that all of the lysate has passed through the MB spin column
+   a. Discard the flow-through and repeat previous centrifuge step to ensure that all of the lysate has passed through the MB spin column
    b. Carefully place the spin column into a clean 2 mL collection tub. Avoid splashing any flow-through onto the MB spin column.
 12. Wash: Add 500 uL of Solution EA to the spin column. Centrifuge at 15,000 x g for 1 min.
    a. Discard the flow-through and place the spin column back into the same 2 mL collection tube
@@ -237,12 +270,12 @@ Day 2: Continue extraction using Qiagen PowerSoil Kit
 15. Aliquot DNA extract: Remaining sample stock, can store samples in 4 °C for days to weeks, -20 °C for long term weeks to months.
 16. Measure extract concentrations of pre-repaired DNA.
 
-Day 3: DNA Repair (can be combined with Day 2)
+**Day 3: DNA Repair (can be combined with Day 2)**
 
 17. Mix the following components in a sterile nuclease-free tube:
    a. FFPE DNA 53.5 uL
-   b. FFPE DNA Repair Buffer 6.5 uL
-   c. NEBNext FFPE DNA repair mix 2 uL
+   b. FFPE DNA Repair Buffer v2 6.5 uL
+   c. NEBNext FFPE DNA Repair Mix v2 2 uL
       i. Total volume= 62 uL
    d. Mix by pipetting followed by a quick spin to collect all liquid from the sides of the tube.
    e. Incubate at 20 °C for 15 minutes.
@@ -262,14 +295,16 @@ Day 3: DNA Repair (can be combined with Day 2)
    a. Mix well on a vortex mixer or by pipetting up and down, and incubate for 2 minutes at room temperature. Put the tube in the magnetic stand until the solution is clear.
 23. Without disturbing the bead pellet, carefully transfer 32 uL of the supernatant to a fresh, sterile microfuge tube.
 24. Proceed to library construction using end-user supplied reagents.
-## Quality control
 
-Run 2% agarose gel to confirm PCR products.
+### Quality control
+- Extraction blank (negative control) included in every extraction.
+- Qubit repaired samples to confirm DNA concentrations.
 
-## Basic troubleshooting guide
+### Basic troubleshooting guide
+Not applicable.
 
-Troubleshooting found within the protocol.
+## REFERENCES
+Shiozaki T, Itoh F, Hirose Y, Onodera J, Kuwata A, et al. (2021) A DNA metabarcoding approach for recovering plankton communities from archived samples fixed in formalin. PLOS ONE 16(2): e0245936. https://doi.org/10.1371/journal.pone.0245936
 
-# REFERENCES
-
-Protocol adapted from: Shiozaki et al. (2021)
+## APPENDIX A: DATASHEETS
+Not applicable.
